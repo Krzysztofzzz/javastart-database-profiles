@@ -4,6 +4,9 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
-    <include file="0001_create_table_product.xml" relativeToChangelogFile="true"/>
-    <include file="0002_add_expiration_date_column_into_porduct" relativeToChangelogFile="true"/>
+    <changeSet id="0002-1" author="krzycho">
+        <update tableName="product">
+            <column name="expiration_date" type="varchar(100)"/>
+        </update>
+    </changeSet>
 </databaseChangeLog>
