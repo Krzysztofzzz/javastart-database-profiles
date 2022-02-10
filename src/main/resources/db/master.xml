@@ -5,5 +5,4 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
     <include file="0001_create_table_product.xml" relativeToChangelogFile="true"/>
-    <include file="0002_add_expiration_date_column_into_porduct" relativeToChangelogFile="true"/>
 </databaseChangeLog>
